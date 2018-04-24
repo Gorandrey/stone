@@ -197,9 +197,14 @@
 								          		Продукция <i class="my-arrow"></i>
 								        	</a>
 									        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									          <a class="dropdown-item" href="#">камень1</a>
-									          <a class="dropdown-item" href="#">камень12</a>
-									          <a class="dropdown-item" href="#">камень13</a>
+									          <a class="dropdown-item" href="#">мойки</a>
+
+									          <a class="dropdown-item" href="#">лестницы и ступени</a>
+									          <a class="dropdown-item" href="#">столешницы</a>
+									          <a class="dropdown-item" href="#">подоконники</a>
+									          <a class="dropdown-item" href="#">барные стойки</a>
+									          <a class="dropdown-item" href="#">ванные комнаты</a>
+									          <a class="dropdown-item" href="#">cтолешницы в ванную из искусственного камня</a>
 									        </div>
 								      	</li>
 								      	<li class="nav-item dropdown">
@@ -824,6 +829,40 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+<script>
+	var popup=document.body.querySelector('.popup-form-block');
+	var close=popup.querySelector('.close');
+	var btnOpen=document.body.querySelectorAll('.btn-open');
+	var questPlaceholder=document.body.querySelectorAll('.place-holder');
 
+	for(var i=0; i<btnOpen.length; i++){
+		btnOpen[i].addEventListener('click', function(e){
+		e.preventDefault();
+		popup.classList.remove('d-none');
+
+	});
+	}
+	[].forEach.call(questPlaceholder, function(elem) {
+		var input=elem.parentNode.querySelector('input');
+
+		input.addEventListener('keydown', function(e){
+			// input.setAttribute('placeholder', elem.innerText);
+    		elem.classList.add('d-none');
+    	});
+    	input.addEventListener('keyup', function(e){
+    		if(input.value==""){
+    		elem.classList.remove('d-none');
+    	}
+    	}
+		);
+	});
+	
+	close.addEventListener('click', function(e){
+		e.preventDefault();
+		popup.classList.add('d-none');
+
+	});
+	
+</script>
 </body>
 </html>
