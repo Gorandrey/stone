@@ -90,7 +90,7 @@
   .popup-form-block .form-block .text {
     font-size: 12px; }
   .popup-form-block .form-block .close {
-    font-size: 14px; }
+    font-size: 16px; }
   .popup-form-block .form-block form {
     margin-top: 30px; }
   .popup-form-block .form-block .placeinput {
@@ -395,7 +395,7 @@
       .questions .question-right input:-moz-placeholder {
         color: #fff; }
       .questions .question-right input {
-        height: 22px;
+        height: 24px;
         font-size: 12px;
         padding-left: 5px; }
       .questions .question-right .place-holder {
@@ -418,6 +418,8 @@
   .partners {
     min-height: 195px;
     padding-bottom: 40px; }
+    .partners img {
+      opacity: 1; }
   footer {
     padding-top: 25px;
     padding-bottom: 40px; }
