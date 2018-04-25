@@ -430,7 +430,8 @@ header {
   background: url("../images/privilege-bg.jpg") no-repeat;
   min-height: 1138px;
   padding-bottom: 80px;
-  background-position: center bottom; }
+  background-position: center bottom;
+  background-color: #fff; }
   .privilege .privilege-view {
     margin-bottom: 80px;
     display: -webkit-box;
@@ -514,7 +515,8 @@ header {
 
 .artifical-product {
   min-height: 1075px;
-  padding-bottom: 90px; }
+  padding-bottom: 90px;
+  background-color: #fff; }
   .artifical-product .artifical-view {
     display: -webkit-box;
     display: -webkit-flex;
@@ -592,7 +594,8 @@ header {
   padding-top: 60px;
   background: url("../images/table-top-bg.png") no-repeat;
   background-position: center bottom;
-  min-height: 1790px; }
+  min-height: 1790px;
+  background-color: #fff; }
   .table-top .item-block {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
@@ -649,7 +652,8 @@ header {
               box-shadow: 20px 20px 1px 0px #ec7e01; }
 
 .our-job {
-  min-height: 655px; }
+  min-height: 655px;
+  background-color: #fff; }
   .our-job .content-item .image-block {
     margin-left: 8px;
     position: relative; }

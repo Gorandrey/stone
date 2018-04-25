@@ -836,14 +836,18 @@
 	var questPlaceholder=document.body.querySelectorAll('.place-holder');
 	var formInput=document.body.querySelectorAll('form input');
 	var textArea=document.body.querySelectorAll('.area');
+
 	function bgNone(formElement){
 		[].forEach.call(formElement, function(elem) {
 			var xsBg=document.body.querySelector('.xs-bg');
+			var head=document.body.querySelector('header');
 			elem.onfocus= function(){
 				xsBg.classList.add('d-none');
+				head.style="margin-top: 0";
 			}
 			elem.onblur = function(){
 				xsBg.classList.remove('d-none');
+				head.style="margin-top: 50px";
 			}
 		})
 	}
