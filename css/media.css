@@ -103,7 +103,8 @@
   .popup-form-block .form-block input {
     height: 22px;
     font-size: 12px;
-    padding-left: 5px; }
+    padding-left: 5px;
+    line-height: 1.2; }
   .popup-form-block .form-block .place-holder {
     left: 20px;
     top: 5px;
@@ -397,7 +398,8 @@
       .questions .question-right input {
         height: 24px;
         font-size: 12px;
-        padding-left: 5px; }
+        padding-left: 5px;
+        line-height: 1.2; }
       .questions .question-right .place-holder {
         left: 20px;
         top: 5px;

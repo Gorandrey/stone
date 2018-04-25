@@ -834,6 +834,19 @@
 	var close=popup.querySelector('.close');
 	var btnOpen=document.body.querySelectorAll('.btn-open');
 	var questPlaceholder=document.body.querySelectorAll('.place-holder');
+	var formInput=document.body.querySelectorAll('form input');
+	
+
+	[].forEach.call(formInput, function(elem) {
+		console.log(elem);
+		var xsBg=document.body.querySelector('.xs-bg');
+		elem.onfocus= function(){
+			xsBg.classList.add('d-none');
+		}
+		elem.onblur = function(){
+			xsBg.classList.remove('d-none');
+		}
+	})
 
 	for(var i=0; i<btnOpen.length; i++){
 		btnOpen[i].addEventListener('click', function(e){
