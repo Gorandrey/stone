@@ -101,10 +101,9 @@
   .popup-form-block .form-block input:-moz-placeholder {
     color: #fff; }
   .popup-form-block .form-block input {
-    height: 22px;
+    height: 26px;
     font-size: 12px;
-    padding-left: 5px;
-    line-height: 1.2; }
+    padding-left: 5px; }
   .popup-form-block .form-block .place-holder {
     left: 20px;
     top: 5px;

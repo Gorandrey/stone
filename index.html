@@ -794,7 +794,7 @@
 		<div class="popup-form-block d-none">
 			<div class="container">
 				<div class="row justify-content-center align-items-center">
-					<div class="col-10 col-sm-8 col-lg-5 form-block">
+					<div class="col-11 col-sm-8 col-lg-5 form-block">
 						<h3 class="title-advertising">Заполните форму </h3>
 						<p class="text">и мы вам перезвоним в течении 15 минут.</p>
 						<div class="line-underline-red"></div>
@@ -835,18 +835,22 @@
 	var btnOpen=document.body.querySelectorAll('.btn-open');
 	var questPlaceholder=document.body.querySelectorAll('.place-holder');
 	var formInput=document.body.querySelectorAll('form input');
-	
+	var textArea=document.body.querySelectorAll('.area');
+	function bgNone(formElement){
+		[].forEach.call(formElement, function(elem) {
+			var xsBg=document.body.querySelector('.xs-bg');
+			elem.onfocus= function(){
+				xsBg.classList.add('d-none');
+			}
+			elem.onblur = function(){
+				xsBg.classList.remove('d-none');
+			}
+		})
+	}
 
-	[].forEach.call(formInput, function(elem) {
-		console.log(elem);
-		var xsBg=document.body.querySelector('.xs-bg');
-		elem.onfocus= function(){
-			xsBg.classList.add('d-none');
-		}
-		elem.onblur = function(){
-			xsBg.classList.remove('d-none');
-		}
-	})
+	bgNone(formInput);
+	bgNone(textArea);
+
 
 	for(var i=0; i<btnOpen.length; i++){
 		btnOpen[i].addEventListener('click', function(e){
