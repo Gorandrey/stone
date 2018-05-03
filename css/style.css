@@ -364,6 +364,14 @@ body {
     background-position: center;
     -webkit-background-size: cover;
             background-size: cover; }
+  .header-section #carouselExampleIndicators .header-bg2 {
+    background-image: url("../images/header-bg2.jpg"); }
+  .header-section #carouselExampleIndicators .header-bg3 {
+    background-image: url("../images/header-bg3.jpg"); }
+  .header-section #carouselExampleIndicators .header-bg4 {
+    background-image: url("../images/header-bg4.jpg"); }
+  .header-section #carouselExampleIndicators .header-bg5 {
+    background-image: url("../images/header-bg5.jpg"); }
   .header-section #carouselExampleIndicators .control {
     position: absolute;
     right: 0;

@@ -52,3 +52,45 @@ var popup=document.body.querySelector('.popup-form-block');
 		popup.classList.add('d-none');
 
 	});
+///////////
+// vue js//
+//////////
+var vm = new Vue({
+  el: '#menu',
+  data: {
+    boxes: [{
+      show: false
+    }, {
+      show: false
+    }, {
+      show: false
+    }, {
+      show: false
+    }, {
+      show: false
+    }, {
+      show: false
+    }, {
+      show: false
+    }],
+    all:{
+    	show: false
+    }
+  },
+  methods: {
+    mytoggle: function(n) {
+			if(vm.boxes[n].show == true){
+       vm.boxes[n].show = false; // open the corresponding box
+      }else{
+      	vm.boxes[n].show = true;
+      }
+    },
+    showMenu: function(){
+    	if(vm.all.show == true){
+       vm.all.show = false; 
+      }else{
+      	vm.all.show = true;
+      }
+    }
+  }
+});
