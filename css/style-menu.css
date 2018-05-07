@@ -1,4 +1,4 @@
-label{
+.cd-accordion-menu label{
   text-transform: uppercase
 }
 .cd-accordion-menu {
@@ -162,7 +162,7 @@ label{
 .has-children ul {
   padding-left: 12px;
 }
-label{
+.cd-accordion-menu label{
   margin-bottom: 0
 }
 .nav-item{
