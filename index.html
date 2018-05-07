@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 	
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style-menu.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,7 +36,6 @@
 								    </div>
 							  </div>
 						 </div>
-						  	
 					
 						<div class="col-12 col-lg-9 right-menu ">
 							<div class="row">
@@ -67,72 +67,230 @@
 								  	</div>		
 								  
 								  <div class="collapse navbar-collapse main-menu" id="navbarSupportedContent">
-								    <ul class="navbar-nav ">
-								    	<li class="nav-item dropdown">
-								        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								  	<ul class="cd-accordion-menu animated navbar-nav">
+										<li class="has-children nav-item">
+											<input type="checkbox" name ="group-1" id="group-1" >
+											<label for="group-1"><a class=" nav-link" href="#">Продукция</a></label>
+
+								      		<ul>
+								      			<li class="has-children">
+								      				<input type="checkbox" name ="sub-group-1" id="sub-group-1">
+													<label for="sub-group-1"><a  href="#">мойки</a></label>
+
+													<ul>
+														<li class="has-children">
+										      				<input type="checkbox" name ="sub-group-1.1" id="sub-group-1.1">
+															<label for="sub-group-1.1"><a  href="#">мойки из искуственного камня</a></label>
+															<ul>
+																<li><a href="#0">1.1</a></li>
+																<li><a href="#0">1.2</a></li>
+																<li><a href="#0">1.3</a></li>
+															</ul>
+														</li>
+														<li class="has-children">
+										      				<input type="checkbox" name ="sub-group-1.2" id="sub-group-1.2">
+															<label for="sub-group-1.2"><a  href="#">мойки из натурального камня</a></label>
+															<ul>
+																<li><a href="granite sinks.html">Гранитные мойки</a></li>
+																<li><a href="#0">1.2</a></li>
+																<li><a href="#0">1.3</a></li>
+															</ul>
+														</li>
+														
+													</ul>
+								      			</li>
+								      			<li class="has-children">
+								      				<input type="checkbox" name ="sub-group-2" id="sub-group-2">
+													<label for="sub-group-2">лестницы и ступени</label>
+
+													<ul>
+														<li class="has-children">
+															<input type="checkbox" name ="sub-group-2.1" id="sub-group-2.1">
+															<label for="sub-group-2.1">лестницы из искуственного камня</label>
+															
+															<ul>
+																<li><a href="#0">1.1</a></li>
+																<li><a href="#0">1.2</a></li>
+																<li><a href="#0">1.3</a></li>
+															</ul>
+														</li>
+													</ul>
+								      			</li>
+								      			<li class="has-children">
+								      				<input type="checkbox" name ="sub-group-3" id="sub-group-3">
+													<label for="sub-group-3"><a href="#">столешницы</a></label>
+
+													<ul>
+														<li><a href="#0">1</a></li>
+														<li><a href="#0">2</a></li>
+														<li><a href="#0">3</a></li>
+													</ul>
+								      			</li>
+								      			<li class="has-children">
+								      				<input type="checkbox" name ="sub-group-4" id="sub-group-4">
+													<label for="sub-group-4"><a href="#">подоконники</a></label>
+
+													<ul>
+														<li><a href="#0">1</a></li>
+														<li><a href="#0">2</a></li>
+														<li><a href="#0">3</a></li>
+													</ul>
+								      			</li>
+								      			<li class="has-children">
+								      				<input type="checkbox" name ="sub-group-5" id="sub-group-5">
+													<label for="sub-group-5"><a href="#">барные стойки</a></label>
+
+													<ul>
+														<li><a href="#0">1</a></li>
+														<li><a href="#0">2</a></li>
+														<li><a href="#0">3</a></li>
+													</ul>
+								      			</li>
+								      			<li class="has-children">
+								      				<input type="checkbox" name ="sub-group-6" id="sub-group-6">
+													<label for="sub-group-6"><a href="#">ванные комнаты</a></label>
+
+													<ul>
+														<li><a href="#0">1</a></li>
+														<li><a href="#0">2</a></li>
+														<li><a href="#0">3</a></li>
+													</ul>
+								      			</li>
+								      			
+								      		</ul>
+										</li>
+
+										<li class="has-children nav-item">
+											<input type="checkbox" name ="group-2" id="group-2">
+											<label for="group-2">Элементы</label>
+
+											<ul>
+												<li><a href="#0">1</a></li>
+												<li><a href="#0">2</a></li>
+											</ul>
+										</li>
+
+										<li class="has-children nav-item">
+											<input type="checkbox" name ="group-3" id="group-3">
+											<label for="group-3">искусственный камень</label>
+
+											<ul>
+												<li><a href="#0">1</a></li>
+												<li><a href="#0">2</a></li>
+											</ul>
+										</li>
+
+										<li class="has-children nav-item">
+											<input type="checkbox" name ="group-4" id="group-4">
+											<label for="group-4">натуральный камень</label>
+
+											<ul>
+												<li class="has-children">
+													<input type="checkbox" name ="sub-group-4" id="sub-group-4">
+													<label for="sub-group-4">Sub Group 3</label>
+
+													<ul>
+														<li><a href="#0">1</a></li>
+														<li><a href="#0">2</a></li>
+													</ul>
+												</li>
+												
+											</ul>
+										</li>
+										<li class="no-children nav-item">
+											
+											<a href="#">Галерея</a>
+
+											
+										</li>
+										<li class="has-children nav-item">
+											<input type="checkbox" name ="group-6" id="group-6">
+											<label for="group-6">Инфо</label>
+
+											<ul>
+												<li class="has-children">
+													<input type="checkbox" name ="sub-group-6.1" id="sub-group-6.1">
+													<label for="sub-group-6.1">статьи</label>
+
+													<ul>
+														<li><a href="acrylic stone.html"> Что привлекает покупателя в акриловом камне?</a></li>
+														<li><a href="#0">2</a></li>
+													</ul>
+												</li>
+												
+											</ul>
+										</li>
+										<li class="no-children nav-item">
+											
+											<a href="#">Контакты</a>
+
+											
+										</li>
+									</ul>
+								    <!-- <ul class="navbar-nav " id="menu" v-bind:style="{paddingBottom: padding + 'px'}">
+								    	<li class="nav-item ">
+								        	<a class="nav-link" @click.prevent="mytoggle(0)">
 								          		Продукция <i class="my-arrow"></i>
 								        	</a>
-									        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									          <a class="dropdown-item" href="#">мойки</a>
-
-									          <a class="dropdown-item" href="#">лестницы и ступени</a>
-									          <a class="dropdown-item" href="#">столешницы</a>
-									          <a class="dropdown-item" href="#">подоконники</a>
-									          <a class="dropdown-item" href="#">барные стойки</a>
-									          <a class="dropdown-item" href="#">ванные комнаты</a>
-									          <a class="dropdown-item" href="#">cтолешницы в ванную из искусственного <br>камня</a>
-									        </div>
+								        	<ul v-show="boxes[0].show" class="drop-down">
+									            <li><a href="#">МОЙКИ</a></li>
+									            <li>ЛЕСТНИЦЫ И СТУПЕНИ</li>
+									            <li>СТОЛЕШНИЦЫ</li>
+									            <li>ПОДОКОННИКИ</li>
+									            <li>БАРНЫЕ СТОЙКИ</li>
+									            <li>ВАННЫЕ КОМНАТЫ</li>
+									          </ul>
+									        
 								      	</li>
-								      	<li class="nav-item dropdown">
-								        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								      	<li class="nav-item ">
+								        	<a class="nav-link" @click.prevent="mytoggle(1)">
 								          		Элементы <i class="my-arrow"></i>
 								        	</a>
-									        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									          <a class="dropdown-item" href="#">камень11</a>
-									          <a class="dropdown-item" href="#">камень12</a>
-									          <a class="dropdown-item" href="#">камень13</a>
-									        </div>
+									        <ul v-show="boxes[1].show" class="drop-down">
+									            <li>1</li>
+									            <li>2</li>
+									            <li>3</li>
+									         </ul>
 								      	</li>
-								      	<li class="nav-item dropdown">
-								        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								      	<li class="nav-item ">
+								        	<a class="nav-link" @click.prevent="mytoggle(2)">
 								          		искусственный камень <i class="my-arrow"></i>
 								        	</a>
-									        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									          <a class="dropdown-item" href="#">1</a>
-									          <a class="dropdown-item" href="#">2</a>
-									          <a class="dropdown-item" href="#">3</a>
-									        </div>
+									       <ul v-show="boxes[2].show" class="drop-down">
+									            <li>1</li>
+									            <li>2</li>
+									            <li>3</li>
+									         </ul>
 								      	</li>
-								      	<li class="nav-item dropdown">
-								        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								      	<li class="nav-item ">
+								        	<a class="nav-link" @click.prevent="mytoggle(3)">
 								          		натуральный камень <i class="my-arrow"></i>
 								        	</a>
-									        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-									          <a class="dropdown-item" href="#">1</a>
-									          <a class="dropdown-item" href="#">2</a>
-									          <a class="dropdown-item" href="#">3</a>
-									        </div>
+									        <ul v-show="boxes[3].show" class="drop-down">
+									            <li>1</li>
+									            <li>2</li>
+									            <li>3</li>
+									         </ul>
 								      	</li>
 								   
 								      <li class="nav-item">
 								        <a class="nav-link" href="#">Галерея</a>
 								      </li>
 
-								      <li class="nav-item dropdown">
-								        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								      <li class="nav-item ">
+								        	<a class="nav-link" @click.prevent="mytoggle(4)">
 								          Инфо <i class="my-arrow"></i>
 								        </a>
-								        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								          <a class="dropdown-item" href="#">Action</a>
-								          <a class="dropdown-item" href="#">Another action</a>
-								          
-								          <a class="dropdown-item" href="#">Something else here</a>
-								        </div>
+								        <ul v-show="boxes[4].show" class="drop-down">
+								            <li>1</li>
+								            <li>2</li>
+								            <li>3</li>
+								         </ul>
 								      </li>
 								      <li class="nav-item">
 								        <a class="nav-link" href="#">Контакты</a>
 								      </li>
-								    </ul>
+								    </ul> -->
 							    
 							  	   </div>
 
