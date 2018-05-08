@@ -157,7 +157,8 @@
   padding: 0;
 }
 .cd-accordion-menu a:hover,.cd-accordion-menu a:active{
-  color: #fff
+  color: #dc7910
+  
 }
 .has-children ul {
   padding-left: 12px;

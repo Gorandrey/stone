@@ -33,7 +33,7 @@ document.onscroll = function(){
 
 
 	if(current_scroll > 0){
-		to_top_btn.classList.add('active');
+		to_top_btn.classList.add('active-btn');
 			if(bottom_line > 0){
 			to_top_btn.style.bottom = bottom_line + 'px';
 		}
@@ -42,6 +42,6 @@ document.onscroll = function(){
 		}		
 	}
 	else{
-		to_top_btn.classList.remove('active');
+		to_top_btn.classList.remove('active-btn');
 	}	
 }
