@@ -72,7 +72,7 @@ if(window.innerWidth>=992){
 				counter--
 				console.log(counter);
 				if(counter==0){
-				header.style="background: none;"
+				header.style="background: ;"
 				}
 			}
 		});
@@ -80,58 +80,8 @@ if(window.innerWidth>=992){
 }
 
 
+window.onresize=function(){
+	header.style="background: ;"
+}
 
 
-///////////
-// vue js//
-//////////
-// var vm = new Vue({
-//   el: '#menu',
-//   data: {
-//     boxes: [{
-//       show: false
-//     }, {
-//       show: false
-//     }, {
-//       show: false
-//     }, {
-//       show: false
-//     }, {
-//       show: false
-//     }, {
-//       show: false
-//     }, {
-//       show: false
-//     }],
-//     padding: 0
-    
-//   },
-//   methods: {
-//     mytoggle: function(n) {
-//     	var head=document.body.querySelector('.header');
-    	
-    	
-// 	if(vm.boxes[n].show == true){
-// 		if(window.innerWidth>=992){
-// 			head.style="background: none;"
-// 		}
-//        		vm.boxes[n].show = false; // open the corresponding box
-//       }
-//      else{
-
-//       	for( var i = 0; i < this.boxes.length; i++){
-//       		vm.boxes[i].show = false;
-//       	}
-
-//       	if(window.innerWidth>=992){
-      	
-//       	head.style="background: rgba(32,32,32,0.6);"
-//       	}
-      	
-//       	vm.boxes[n].show = true;
-
-//       }
-//     },
-    
-//   }
-// });
