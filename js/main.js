@@ -32,6 +32,8 @@ var menuInput=document.body.querySelectorAll('.cd-accordion-menu .nav-item>input
 	// }
 
 
+//form controller
+
 	for(var i=0; i<btnOpen.length; i++){
 		btnOpen[i].addEventListener('click', function(e){
 		e.preventDefault();
@@ -58,6 +60,9 @@ var menuInput=document.body.querySelectorAll('.cd-accordion-menu .nav-item>input
 		popup.classList.add('d-none');
 
 	});
+
+
+// header bg	
 if(window.innerWidth>=992){
 	var counter=0;
 	[].forEach.call(menuInput, function(elem) {
