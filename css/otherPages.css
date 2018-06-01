@@ -3,12 +3,13 @@
   opacity: 1 !important; }
 
 .header {
-  background: #797979;
-  position: static; }
+  background: darkslategray;
+  position: relative; }
   .header .contact-block .contact-item div {
     color: #fff; }
   .header .menu-line {
     display: none; }
+  
 
 .breadcrumb {
   background: none; }
@@ -268,3 +269,43 @@
   .filter-menu .btn-dark {
     padding: 8px 25px;
     margin: 10px; }
+.site-login{
+  margin: 15vh 0;
+}
+.site-login h2{
+  background-color:  darkslategrey;
+  border-radius: 20px 20px 0 0;
+  color: #fff;
+  font-size: 28px;
+  padding: 20px 26px;
+  margin: 0;
+  font-weight: bold;
+}
+.site-login h2 .fa-unlock-alt {
+  margin-right: 14px;
+}
+.site-login #login-form{
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  padding: 20px 26px;
+}
+.site-login #login-form input[type="checkbox"]{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#login-form .btn-container{
+  display: flex;
+  justify-content: center;
+}
+#login-form .btn-login{
+  background: #ec7e01;
+  border: none;
+  outline: none;
+  padding: 10px 45px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+#login-form .text-reset-pass{
+  margin-bottom: 1rem;
+}

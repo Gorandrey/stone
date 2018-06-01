@@ -174,11 +174,12 @@
   .cd-accordion-menu label, .cd-accordion-menu a{
     font-size: 14px;
   }
-  .cd-accordion-menu .no-children{
-    padding-left: 16px
+  .has-children .has-children{
+    padding-bottom: 0;
   }
+  
 @media screen and (max-width: 640px) {
   .cd-accordion-menu label, .cd-accordion-menu a {
-    font-size: 10px;
-    padding-top: 5px
+    font-size: 14px;
+    
   }

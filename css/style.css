@@ -1004,3 +1004,18 @@ footer {
         background: url("../images/disainer.png") no-repeat;
         opacity: 0.1;
         padding-bottom: 10px; }
+.cd-accordion-menu>li>ul{
+  position: absolute;
+  background: #202020;
+  padding-left: 0;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  min-width: 160px;
+}
+.cd-accordion-menu ul li{
+  padding: 10px;
+  padding-bottom: 0;
+}
+.cd-accordion-menu .has-children:hover > ul{
+display: block;
+}

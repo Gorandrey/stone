@@ -1,13 +1,22 @@
 @media screen and (max-width: 991px) {
   .mouse {
     display: none; }
+  .cd-accordion-menu>li>ul{
+    position: static;
+    background: none;
+    border-radius: 0;
+    padding-bottom: 0;
+  }
   .xs-bg {
     background: #202020;
     position: fixed;
     top: 0;
     z-index: 200;
     width: 100%;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    overflow-y: scroll;
+    max-height: 100vh;
+  }
     .xs-bg .top-menu {
       display: -webkit-box;
       display: -webkit-flex;
@@ -63,7 +72,8 @@
             font-family: 'HelveticaNeueCyr-Light';
             text-transform: uppercase; }
         .xs-bg .top-menu .main-menu .nav-item {
-          padding-top: 10px; }
+          padding-top: 10px;
+           }
         .xs-bg .top-menu .main-menu .nav-link {
           font-size: 14px; }
   .menu-line {
@@ -236,8 +246,7 @@
             padding-top: 10px;
             font-family: 'HelveticaNeueCyr-Light';
             text-transform: uppercase; }
-        .xs-bg .top-menu .main-menu .nav-link {
-          font-size: 10px; }
+        
   .menu-line {
     display: none; }
   .header-section {

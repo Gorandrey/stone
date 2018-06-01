@@ -6,7 +6,9 @@ var formInput=document.body.querySelectorAll('form input');
 var textArea=document.body.querySelectorAll('.area');
 var head=document.body.querySelector('.header-section');
 var header=document.body.querySelector('.header');
+var menu=document.body.querySelectorAll('.cd-accordion-menu');
 var menuInput=document.body.querySelectorAll('.cd-accordion-menu .nav-item>input');
+var counter=1;
 	// function bgNone(formElement){
 	// 	[].forEach.call(formElement, function(elem) {
 	// 		var xsBg=document.body.querySelector('.xs-bg');
@@ -62,31 +64,41 @@ var menuInput=document.body.querySelectorAll('.cd-accordion-menu .nav-item>input
 	});
 
 
-// header bg	
+// header
+function unchecked(){
+[].forEach.call(menuInput, function(elem) {
+			elem.checked=false;
+	});
+
+console.log(counter);
+}	
 if(window.innerWidth>=992){
-	var counter=0;
 	[].forEach.call(menuInput, function(elem) {
+		
+
 		elem.addEventListener('click', function(e){
-			
 			if(elem.checked==true){
-				counter++
-				header.style="background: rgba(32,32,32,0.6);"
-				
+				unchecked();
+				elem.checked=true;
 			}
-			else{
-				counter--
-				console.log(counter);
-				if(counter==0){
-				header.style="background: ;"
-				}
-			}
+			// counter++
+			// console.log(counter);
+			// if(counter%2==0){
+			// 	unchecked();
+			// }
+			// else{
+			// 	unchecked();
+			// 	elem.checked=true;
+			// }
+			
 		});
 	});
 }
 
 
-window.onresize=function(){
-	header.style="background: ;"
-}
+// window.onresize=function(){
+// 	header.style="background: ;"
+// 	counter=0;
+// }
 
 
