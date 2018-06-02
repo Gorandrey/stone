@@ -1016,6 +1016,98 @@ footer {
   padding: 10px;
   padding-bottom: 0;
 }
-.cd-accordion-menu .has-children:hover > ul{
+.cd-accordion-menu li a{
+  display: inline-block;
+}
+.cd-accordion-menu label{
+  padding: 5px 0 5px 16px ;
+}
+/*.cd-accordion-menu .has-children:hover > ul{
 display: block;
+}
+.cd-accordion-menu li a{
+  display: inline-block;
+}
+.cd-accordion-menu li.has-children{
+  padding: 15px 0 15px 0
+}*/
+
+
+.preloader-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: -moz-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,128,128,1) 100%); /* ff3.6+ */
+  background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(0,0,0,1)), color-stop(100%, rgba(0,128,128,1))); /* safari4+,chrome */
+  background: -webkit-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,128,128,1) 100%); /* safari5.1+,chrome10+ */
+  background: -o-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,128,128,1) 100%); /* opera 11.10+ */
+  background: -ms-linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,128,128,1) 100%); /* ie10+ */
+  background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(0,128,128,1) 100%); /* w3c */;
+  overflow: hidden;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  z-index: 9999;
+}
+
+
+
+
+
+
+
+
+
+.loader {
+position: relative;
+width: 256px;
+height: auto;
+}
+
+
+
+
+.loader span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: 0%;
+  background: url("../images/logo.png") center bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: imgLoading 3s linear infinite;
+  transition: 0s;
+}
+
+.loader img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.3;
+}
+    
+@keyframes imgLoading {
+    0% {
+        width: 100%;
+        height: 0%;
+        opacity: 1;
+    }
+    95% {
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    
+    100% {
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
 }

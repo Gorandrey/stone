@@ -1,6 +1,9 @@
 @media screen and (max-width: 991px) {
   .mouse {
     display: none; }
+    .cd-accordion-menu label{
+  padding: 15px 0 15px 25px !important;
+}
   .cd-accordion-menu>li>ul{
     position: static;
     background: none;
@@ -246,6 +249,8 @@
             padding-top: 10px;
             font-family: 'HelveticaNeueCyr-Light';
             text-transform: uppercase; }
+          .xs-bg .top-menu .main-menu .nav-link {
+          font-size: 12px; }
         
   .menu-line {
     display: none; }
